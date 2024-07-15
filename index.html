@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Dash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="welcome">
+        <h1>DICE DASH</h1>
+      </div>
+      <div class="card-container">
+        <div class="card ">
+          <div id="player-name" class="card-title ">Player</div>
+          <div class="dice-area">
+            <img id="img-player" class="dice-pic" src="img/1.png" alt="">
+          </div>
+          <div id="user-dice" class="points "></div>
+          <div class="cash" id="player-coins">Le tue monete: 1000</div>
+        </div>
+        <div class="middle-section">
+          <div class="counter">
+            <div id="player-score">0</div>
+            <div>-</div>
+            <div id="computer-score">0</div>
+          </div>
+          <div id="total-bet">Posta in palio : 0</div>
+          <div class="bet-input"><input type="number" placeholder="La tua scommessa" id="player-bet"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Computer</div>
+          <div class="dice-area">
+            <img id="img-computer" class="dice-pic" src="img/1.png" alt="">
+          </div>
+          <div id="computer-dice" class="points "></div>
+          <div class="cash" id="cpu-coins">Le monete del computer: 1000</div>
+        </div>
+      </div>
+      <div class="btn-container">
+        <div>
+          <button id="press-to-play" class="btn">Scommetti e Gioca</button>
+        </div>
+        
+      </div>
+      <div id="result" class="output-message "></div>
+      <script src="js/script.js"></script>
+    </div>
+  </main>
+</body>
+</html>
